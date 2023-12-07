@@ -5,8 +5,8 @@
         <div class="col-md-10 mx-auto">
 
             <!-- COLUMNAS DE LINKS -->
-            <div class="row filas-footer">
-                <div class="col-lg-3 col-md-6 footer-links">
+            <div class="row filas-footer justify-content-center">
+                <div class="col-lg-3 col-md-6 footer-links ">
                     <h5>Actividades</h5>
                     <div class="enlace">
                         <a href="">Talleres</a><br>

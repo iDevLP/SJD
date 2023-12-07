@@ -3,7 +3,7 @@ section:first-child {
 }
 
 .box-secciones section {
-    padding: 5rem 5rem;
+    padding: 5rem 0;
 }
 
 .box-secciones section:nth-child(4) {

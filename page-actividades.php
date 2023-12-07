@@ -19,7 +19,7 @@
 </section>
 <section class="py-5 container section-actividades">
     <div class="row py-3">
-        <h3 class="text-center fw-medium">Seleccione una categoría:</h3>
+        <h3 class="text-center fw-medium">Seleccione un curso:</h3>
         <ul class="nav justify-content-center nav-underline" id="myTab" role="tablist">
 
             <li class="nav-item" role="presentation">
@@ -27,29 +27,32 @@
                     type="button" role="tab" aria-controls="Todos-pane" aria-selected="true">Todos</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="talleres-tab" data-bs-toggle="tab" data-bs-target="#talleres-tab-pane"
-                    type="button" role="tab" aria-controls="talleres-tab-pane" aria-selected="false">Talleres</button>
+                <button class="nav-link" id="umaki-tab" data-bs-toggle="tab" data-bs-target="#umaki-tab-pane"
+                    type="button" role="tab" aria-controls="umaki-tab-pane" aria-selected="false">Umaki</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="terapiaOcupacional-tab" data-bs-toggle="tab"
-                    data-bs-target="#terapiaOcupacional-tab-pane" type="button" role="tab"
-                    aria-controls="terapiaOcupacional-tab-pane" aria-selected="false">Terapia Ocupacional</button>
+                <button class="nav-link" id="willay-tab" data-bs-toggle="tab" data-bs-target="#willay-tab-pane"
+                    type="button" role="tab" aria-controls="willay-tab-pane" aria-selected="false">Willay</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="kinesiologia-tab" data-bs-toggle="tab"
-                    data-bs-target="#kinesiologia-tab-pane" type="button" role="tab"
-                    aria-controls="kinesiologia-tab-pane" aria-selected="false">Kinesiología</button>
+                <button class="nav-link" id="riku-tab" data-bs-toggle="tab" data-bs-target="#riku-tab-pane"
+                    type="button" role="tab" aria-controls="riku-tab-pane" aria-selected="false">Riku</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="historias-tab" data-bs-toggle="tab" data-bs-target="#historias-tab-pane"
-                    type="button" role="tab" aria-controls="historias-tab-pane" aria-selected="false">Historias de
-                    progreso</button>
+                <button class="nav-link" id="kimn-tab" data-bs-toggle="tab" data-bs-target="#kimn-tab-pane"
+                    type="button" role="tab" aria-controls="kimn-tab-pane" aria-selected="false">Kimn</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="actividadesExtracurriculares-tab" data-bs-toggle="tab"
-                    data-bs-target="#actividadesExtracurriculares-tab-pane" type="button" role="tab"
-                    aria-controls="actividadesExtracurriculares-tab-pane"
-                    aria-selected="false">Extracurriculares</button>
+                <button class="nav-link" id="amulen-tab" data-bs-toggle="tab" data-bs-target="#amulen-tab-pane"
+                    type="button" role="tab" aria-controls="amulen-tab-pane" aria-selected="false">Amulen</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="akoa-tab" data-bs-toggle="tab" data-bs-target="#akoa-tab-pane"
+                    type="button" role="tab" aria-controls="akoa-tab-pane" aria-selected="false">A Koa</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="rakiduam-tab" data-bs-toggle="tab" data-bs-target="#rakiduam-tab-pane"
+                    type="button" role="tab" aria-controls="rakiduam-tab-pane" aria-selected="false">Rakiduam</button>
             </li>
         </ul>
 
@@ -63,7 +66,9 @@
                     <?php if ($the_query->have_posts()): ?>
                         <?php while ($the_query->have_posts()):
                             $the_query->the_post(); ?>
-                            <?php get_template_part("actividad-card") ?>
+                            <?php if (in_category("actividad") == true): ?>
+                                <?php get_template_part("actividad-card") ?>
+                            <?php endif; ?>
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>
                     <?php else: ?>
@@ -71,16 +76,20 @@
                             <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
                         </p>
                     <?php endif; ?>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/actividad')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
                 </div>
 
             </div>
-            <div class="tab-pane " id="talleres-tab-pane" role="tabpanel" aria-labelledby="talleres-tab" tabindex="0">
+            <div class="tab-pane " id="umaki-tab-pane" role="tabpanel" aria-labelledby="umaki-tab" tabindex="0">
                 <div class="actividades-card-container">
-                    <?php $the_query = new WP_Query(array('category_name' => 'actividad')); ?>
+                    <?php $the_query = new WP_Query(array('category_name' => 'umaki')); ?>
                     <?php if ($the_query->have_posts()): ?>
                         <?php while ($the_query->have_posts()):
                             $the_query->the_post(); ?>
-                            <?php if (get_field("categoria_de_la_actividad") == "Taller"): ?>
+                            <?php if (in_category("actividad") == true): ?>
                                 <?php get_template_part("actividad-card") ?>
                             <?php endif; ?>
                         <?php endwhile; ?>
@@ -91,15 +100,18 @@
                         </p>
                     <?php endif; ?>
                 </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/umaki')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
+                </div>
             </div>
-            <div class="tab-pane " id="terapiaOcupacional-tab-pane" role="tabpanel"
-                aria-labelledby="terapiaOcupacional-tab" tabindex="0">
+            <div class="tab-pane " id="willay-tab-pane" role="tabpanel" aria-labelledby="willay-tab" tabindex="0">
                 <div class="actividades-card-container">
-                    <?php $the_query = new WP_Query(array('category_name' => 'actividad')); ?>
+                    <?php $the_query = new WP_Query(array('category_name' => 'willay')); ?>
                     <?php if ($the_query->have_posts()): ?>
                         <?php while ($the_query->have_posts()):
                             $the_query->the_post(); ?>
-                            <?php if (get_field("categoria_de_la_actividad") == "Terapia ocupacional"): ?>
+                            <?php if (in_category("actividad") == true): ?>
                                 <?php get_template_part("actividad-card") ?>
                             <?php endif; ?>
                         <?php endwhile; ?>
@@ -110,15 +122,18 @@
                         </p>
                     <?php endif; ?>
                 </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/willay')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
+                </div>
             </div>
-            <div class="tab-pane " id="kinesiologia-tab-pane" role="tabpanel" aria-labelledby="kinesiologia-tab"
-                tabindex="0">
+            <div class="tab-pane " id="riku-tab-pane" role="tabpanel" aria-labelledby="riku-tab" tabindex="0">
                 <div class="actividades-card-container">
-                    <?php $the_query = new WP_Query(array('category_name' => 'actividad')); ?>
+                    <?php $the_query = new WP_Query(array('category_name' => 'riku')); ?>
                     <?php if ($the_query->have_posts()): ?>
                         <?php while ($the_query->have_posts()):
                             $the_query->the_post(); ?>
-                            <?php if (get_field("categoria_de_la_actividad") == "Kinesiología"): ?>
+                            <?php if (in_category("actividad") == true): ?>
                                 <?php get_template_part("actividad-card") ?>
                             <?php endif; ?>
                         <?php endwhile; ?>
@@ -129,14 +144,18 @@
                         </p>
                     <?php endif; ?>
                 </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/riku')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
+                </div>
             </div>
-            <div class="tab-pane " id="historias-tab-pane" role="tabpanel" aria-labelledby="historias-tab" tabindex="0">
+            <div class="tab-pane " id="kimn-tab-pane" role="tabpanel" aria-labelledby="kimn-tab" tabindex="0">
                 <div class="actividades-card-container">
-                    <?php $the_query = new WP_Query(array('category_name' => 'actividad')); ?>
+                    <?php $the_query = new WP_Query(array('category_name' => 'kimn')); ?>
                     <?php if ($the_query->have_posts()): ?>
                         <?php while ($the_query->have_posts()):
                             $the_query->the_post(); ?>
-                            <?php if (get_field("categoria_de_la_actividad") == "Historias de progreso"): ?>
+                            <?php if (in_category("actividad") == true): ?>
                                 <?php get_template_part("actividad-card") ?>
                             <?php endif; ?>
                         <?php endwhile; ?>
@@ -147,15 +166,18 @@
                         </p>
                     <?php endif; ?>
                 </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/kimn')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
+                </div>
             </div>
-            <div class="tab-pane " id="actividadesExtracurriculares-tab-pane" role="tabpanel"
-                aria-labelledby="actividadesExtracurriculares-tab" tabindex="0">
+            <div class="tab-pane " id="amulen-tab-pane" role="tabpanel" aria-labelledby="amulen-tab" tabindex="0">
                 <div class="actividades-card-container">
-                    <?php $the_query = new WP_Query(array('category_name' => 'actividad')); ?>
+                    <?php $the_query = new WP_Query(array('category_name' => 'amulen')); ?>
                     <?php if ($the_query->have_posts()): ?>
                         <?php while ($the_query->have_posts()):
                             $the_query->the_post(); ?>
-                            <?php if (get_field("categoria_de_la_actividad") == "Extracurricular"): ?>
+                            <?php if (in_category("actividad") == true): ?>
                                 <?php get_template_part("actividad-card") ?>
                             <?php endif; ?>
                         <?php endwhile; ?>
@@ -165,6 +187,54 @@
                             <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
                         </p>
                     <?php endif; ?>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/amulen')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
+                </div>
+            </div>
+            <div class="tab-pane " id="akoa-tab-pane" role="tabpanel" aria-labelledby="akoa-tab" tabindex="0">
+                <div class="actividades-card-container">
+                    <?php $the_query = new WP_Query(array('category_name' => 'a-koa')); ?>
+                    <?php if ($the_query->have_posts()): ?>
+                        <?php while ($the_query->have_posts()):
+                            $the_query->the_post(); ?>
+                            <?php if (in_category("actividad") == true): ?>
+                                <?php get_template_part("actividad-card") ?>
+                            <?php endif; ?>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    <?php else: ?>
+                        <p>
+                            <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
+                        </p>
+                    <?php endif; ?>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/a-koa')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
+                </div>
+            </div>
+            <div class="tab-pane " id="rakiduam-tab-pane" role="tabpanel" aria-labelledby="rakiduam-tab" tabindex="0">
+                <div class="actividades-card-container">
+                    <?php $the_query = new WP_Query(array('category_name' => 'rakiduam')); ?>
+                    <?php if ($the_query->have_posts()): ?>
+                        <?php while ($the_query->have_posts()):
+                            $the_query->the_post(); ?>
+                            <?php if (in_category("actividad") == true): ?>
+                                <?php get_template_part("actividad-card") ?>
+                            <?php endif; ?>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    <?php else: ?>
+                        <p>
+                            <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
+                        </p>
+                    <?php endif; ?>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="<?php echo esc_url(home_url('category/rakiduam')); ?>"
+                        class="button center--button text-decoration-none ">Ver todas las actividades</a>
                 </div>
             </div>
 

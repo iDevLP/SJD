@@ -279,7 +279,7 @@
         </div>
     </section>
     <section id="redesDeAyuda" class="container">
-        <div class="row pb-5">
+        <div class="row pb-5 fila-redes">
             <div class="col-md-6">
                 <h3 class="fw-bold">Redes de ayuda</h3>
                 <p>
@@ -296,7 +296,7 @@
                 <img src="<?php echo get_theme_file_uri("img/logod-redes.png") ?>" class="rda-imagen" alt="">
             </div>
         </div>
-        <div class="row gy-3">
+        <div class="row gy-3 pb-5">
             <div class="col-md-6">
                 <div class="rda-card">
                     <img src="<?php echo get_theme_file_uri("img/andresbello.jpg") ?>" alt="Universidad Andres Bello">

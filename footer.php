@@ -6,7 +6,7 @@
 
             <!-- COLUMNAS DE LINKS -->
             <div class="row filas-footer">
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-sm-auto footer-links ">
+                <div class="col-lg-3 col-md-4 col-sm-6 footer-links ">
                     <h5>Actividades</h5>
                     <div class="enlace">
                         <a href="">Talleres</a><br>
@@ -24,7 +24,7 @@
                         <a href="">Actividades extracurriculares</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-sm-auto footer-links">
+                <div class="col-lg-3 col-md-4 col-sm-6 footer-links">
                     <h5>Escuela</h5>
                     <div class="enlace">
                         <a href="">Nosotros</a><br>
@@ -42,7 +42,7 @@
                         <a href="">Redes de ayuda</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-sm-auto footer-links">
+                <div class="col-lg-3 col-md-4 col-sm-6 footer-links">
                     <h5>Contacto</h5>
                     <div class="enlace">
                         <a href="">Información de contacto</a><br>
@@ -60,7 +60,7 @@
                         <a href="">Programar visita</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mx-sm-auto footer-links">
+                <div class="col-lg-3 col-md-4 col-sm-6 footer-links">
                     <h5>Admisión</h5>
                     <div class="enlace">
                         <a href="">Calendario de admisión</a><br>

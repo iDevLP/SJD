@@ -53,6 +53,10 @@
 .rda-card-body p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 4;
     overflow: hidden;
+}
+
+.rda-card-body {
+    margin: auto 0;
 }

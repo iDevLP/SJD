@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="box-secciones">
+<main class="box-secciones-index">
     <section class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
@@ -133,22 +133,24 @@
         </div>
     </section>
     <!-- Invitación a admisión -->
-    <section class="bg-secondary-escuela container-fluid">
-        <div class="row">
-            <div class="col-md-6 mx-auto text-center">
-                <div class="d-flex flex-column align-items-center ">
-                    <h3 class="fw-bold">¿Quieres ser parte de la comunidad?</h3>
-                    <p>Estamos abiertos a recibir a todas las familias interesadas en brindar a sus hijos una
-                        educación
-                        de
-                        calidad. Si desea obtener más información sobre nuestra escuela o programas, no dude en
-                        ponerse
-                        en
-                        contacto con nosotros. <br>
-                        ¡Esperamos verlos pronto!
-                    </p>
-                    <a class="button center--button text-decoration-none "
-                        href="<?php echo esc_url(home_url('admision/')); ?>">Admisión</a>
+    <section class="bg-secondary-escuela">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <h3 class="fw-bold">¿Quieres ser parte de la comunidad?</h3>
+                        <p>Estamos abiertos a recibir a todas las familias interesadas en brindar a sus hijos una
+                            educación
+                            de
+                            calidad. Si desea obtener más información sobre nuestra escuela o programas, no dude en
+                            ponerse
+                            en
+                            contacto con nosotros. <br>
+                            ¡Esperamos verlos pronto!
+                        </p>
+                        <a class="button center--button text-decoration-none "
+                            href="<?php echo esc_url(home_url('admision/')); ?>">Admisión</a>
+                    </div>
                 </div>
             </div>
         </div>

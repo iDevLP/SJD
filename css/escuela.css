@@ -1,3 +1,16 @@
+.box-secciones-escuela section:first-child {
+    padding-top: 5rem;
+}
+
+.box-secciones-escuela section {
+    padding: 5rem 1rem;
+}
+
+.box-secciones-escuela section:nth-child(2),
+.box-secciones-escuela section:nth-child(3) {
+    padding-top: 0;
+}
+
 .escuela-imagen {
     object-fit: cover;
     width: 100%;

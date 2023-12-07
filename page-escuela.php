@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<main class="container box-secciones">
-    <section class="py-5">
+<main class="container box-secciones-escuela">
+    <section class="">
         <div class="row">
             <div class="col-md-6">
                 <span class="text-accent-escuela fw-bold">Nuestra misión</span>
@@ -21,7 +21,7 @@
         </div>
     </section>
     <?php get_template_part("content", "profesionales"); ?>
-    <section class="py-5">
+    <section class="">
         <div class="row">
             <span class="text-accent-escuela fw-bold">Ruta formativa</span>
             <h3 class="fw-bold ">Conoce nuestros cursos.</h3>
@@ -278,8 +278,8 @@
             </div>
         </div>
     </section>
-    <section id="redesDeAyuda" class="py-5 container">
-        <div class="row">
+    <section id="redesDeAyuda" class="container">
+        <div class="row pb-5">
             <div class="col-md-6">
                 <h3 class="fw-bold">Redes de ayuda</h3>
                 <p>
@@ -296,7 +296,7 @@
                 <img src="<?php echo get_theme_file_uri("img/logod-redes.png") ?>" class="rda-imagen" alt="">
             </div>
         </div>
-        <div class="row py-5 gy-3">
+        <div class="row gy-3">
             <div class="col-md-6">
                 <div class="rda-card">
                     <img src="<?php echo get_theme_file_uri("img/andresbello.jpg") ?>" alt="Universidad Andres Bello">
@@ -402,7 +402,7 @@
                 </div>
             </div>
         </div>
-        <div class="row g-5">
+        <div class="row pt-5 g-5">
             <div class="col-md-6">
                 <h3 class="fw-bold">Postular ayuda para la escuela</h3>
                 <form class="formulario" action="">

@@ -1,13 +1,19 @@
-section:first-child {
+.box-secciones-index section:first-child {
     padding-top: 5rem;
 }
 
-.box-secciones section {
+.box-secciones-index section {
     padding: 5rem 0;
 }
 
-.box-secciones section:nth-child(4) {
+.box-secciones-index section:nth-child(4) {
     padding-top: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .box-secciones-index section {
+        padding: 5rem 1rem;
+    }
 }
 
 .middle-image {

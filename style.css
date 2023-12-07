@@ -6,6 +6,12 @@ Version: 1.0
 Author: COD1NE
 Author URI: http://www.cod1ne.cl
 */
+
+/* ------------------------------ TIPOGRAFÍA ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
 :root {
     --primary-color: #0B0742;
     --secondary-color: #3C4CAD;
@@ -16,11 +22,6 @@ Author URI: http://www.cod1ne.cl
     --gray-text: #272829;
     --terapia-ocupacional: #219C90;
 }
-
-/* ------------------------------ TIPOGRAFÍA ------------------------------ */
-
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 .text-accent-escuela {
     color: var(--accent-color);

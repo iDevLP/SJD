@@ -210,3 +210,16 @@ span {
     font-weight: 600;
     color: #ffffff;
 }
+
+@media screen and (max-width: 991px) {
+    .footer-links {
+        padding-bottom: 50px;
+    }
+
+    .filas-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

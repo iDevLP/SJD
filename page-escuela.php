@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="container">
+<main class="container box-secciones">
     <section class="py-5">
         <div class="row">
             <div class="col-md-6">

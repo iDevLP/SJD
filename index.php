@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<main class="">
-    <section class="container bg-danger">
-        <div class="row align-items-center py-5">
+<main class="box-secciones">
+    <section class="container">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <div>
                     <span class="text-accent-escuela fw-bold">Mi nombre es Luis</span>
@@ -21,7 +21,7 @@
         </div>
     </section>
     <!-- --- Nuestras características --- -->
-    <section class="py-5 bg-gray-escuela">
+    <section class="bg-gray-escuela">
         <div class="container ">
             <h3 class="fw-bold">Nuestras características</h3>
             <div class="row align-items-center justify-content-center ">
@@ -85,7 +85,7 @@
         </div>
     </section>
     <!-- --- Actividades --- -->
-    <section class="container py-5">
+    <section class="container">
         <h3 class="fw-bold">Actividades</h3>
         <p class="mb-0 pb-0">Explora los recursos académicos que tenemos para nuestro alumnado de manera online</p>
         <div class="actividades-card-container">
@@ -109,8 +109,8 @@
 
     </section>
     <!-- --- Testimonios de la comunidad -- -->
-    <section class="container ">
-        <div class="row align-items-center py-5">
+    <section class="container">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <div>
                     <span class="text-accent-escuela fw-bold">Somos una familia.</span>
@@ -133,7 +133,7 @@
         </div>
     </section>
     <!-- Invitación a admisión -->
-    <section class="bg-secondary-escuela py-5 container-fluid">
+    <section class="bg-secondary-escuela container-fluid">
         <div class="row">
             <div class="col-md-6 mx-auto text-center">
                 <div class="d-flex flex-column align-items-center ">

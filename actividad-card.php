@@ -1,4 +1,5 @@
 <a class="card-link" href="<?php the_permalink(); ?>">
+    <?php $fecha = get_the_date('j \d\e F Y'); ?>
     <article class="card-actividad">
         <div class="card-actividad__header">
             <?php echo the_post_thumbnail('full', array('class' => 'card-actividad__img')); ?>
@@ -24,7 +25,7 @@
             </p>
             <span class="card-actividad__date">
                 <i class="fa-regular fa-clock"></i>
-                <?php the_field("fecha_de_publicacion_de_la_actividad"); ?>
+                <?php echo $fecha; ?>
             </span>
         </div>
     </article>

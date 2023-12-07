@@ -220,3 +220,10 @@ span {
     }
 
 }
+
+@media screen and (max-width: 575px) {
+    .filas-footer {
+        margin: 0 auto;
+        width: 230px;
+    }
+}

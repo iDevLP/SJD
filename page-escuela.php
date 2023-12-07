@@ -296,110 +296,146 @@
                 <img src="<?php echo get_theme_file_uri("img/logod-redes.png") ?>" class="rda-imagen" alt="">
             </div>
         </div>
-        <div class="row gy-3 pb-5">
-            <div class="col-md-6">
-                <div class="rda-card">
-                    <img src="<?php echo get_theme_file_uri("img/andresbello.jpg") ?>" alt="Universidad Andres Bello">
-                    <div class="rda-card-body">
-                        <h5 class="rda-card__title">Universidad Andres Bello</h5>
-                        <p>¡Qué emoción sentirse conectados con la Facultad de Ciencias de la Rehabilitación de la
-                            Universidad Andrès Bello! Desde hace 5 años tenemos el privilegio de tener un convenio
-                            con esta prestigiosa institución, lo que nos permite ser un centro de práctica
-                            profesional para estudiantes de Terapia Ocupacional y Kinesiología.
-
-                            Esto nos llena de orgullo y satisfacción, ya que significa que nuestra escuela es
-                            reconocida por su calidad y profesionalismo. Además, esta conexión nos permite ofrecer a
-                            nuestros estudiantes la oportunidad de recibir experiencia práctica de manera más
-                            cercana y efectiva. Estamos muy agradecidos con la Facultad de Ciencias de la
-                            Rehabilitación por confiar en nosotros y estamos muy emocionados de seguir trabajando
-                            juntos en el futuro.</p>
+        <div class="modal" tabindex="-1" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row gy-3 pb-5 g-5">
             <div class="col-md-6">
-                <div class="rda-card">
-                    <img src="<?php echo get_theme_file_uri("img/teleton.jpg") ?>" alt="Teletón">
-                    <div class="rda-card-body">
-                        <h5 class="rda-card__title">Teletón</h5>
-                        <p>El Instituto Teletón Valparaíso es un lugar clave para el bienestar de nuestros
-                            estudiantes, ya que el 60% de ellos acuden allí para ser atendidos por profesionales de
-                            diversas especialidades. La comunicación fluida entre la escuela y la Teletón es
-                            esencial para garantizar que los estudiantes reciban el mejor tratamiento posible.
+                <a class="text-decoration-none text-black" href="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <div class="rda-card">
+                        <img src="<?php echo get_theme_file_uri("img/andresbello.jpg") ?>"
+                            alt="Universidad Andres Bello">
+                        <div class="rda-card-body">
+                            <h5 class="rda-card__title">Universidad Andres Bello</h5>
+                            <p>¡Qué emoción sentirse conectados con la Facultad de Ciencias de la Rehabilitación de la
+                                Universidad Andrès Bello! Desde hace 5 años tenemos el privilegio de tener un convenio
+                                con esta prestigiosa institución, lo que nos permite ser un centro de práctica
+                                profesional para estudiantes de Terapia Ocupacional y Kinesiología.
 
-                            La colaboración entre la escuela y la Teletón permite a los estudiantes recibir atención
-                            médica especializada, así como apoyo educativo y psicológico. Esto ayuda a mejorar su
-                            calidad de vida y a alcanzar su máximo potencial. Es esencial seguir fortaleciendo esta
-                            relación para continuar brindando el apoyo necesario a nuestros estudiantes y mejorar su
-                            experiencia en el Instituto Teletón Valparaíso.</p>
+                                Esto nos llena de orgullo y satisfacción, ya que significa que nuestra escuela es
+                                reconocida por su calidad y profesionalismo. Además, esta conexión nos permite ofrecer a
+                                nuestros estudiantes la oportunidad de recibir experiencia práctica de manera más
+                                cercana y efectiva. Estamos muy agradecidos con la Facultad de Ciencias de la
+                                Rehabilitación por confiar en nosotros y estamos muy emocionados de seguir trabajando
+                                juntos en el futuro.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-6">
-                <div class="rda-card">
-                    <img src="<?php echo get_theme_file_uri("img/rotaryclub.jpg") ?>" alt="Puertas del Rotary Club">
-                    <div class="rda-card-body">
-                        <h5 class="rda-card__title">Rotary Club (Norte)</h5>
-                        <p>¡Qué orgullo ser parte del Rotary Club de Viña del Mar! Desde el año 2016, nuestra
-                            organización se ha dedicado a apadrinar a todos los estudiantes de la escuela,
-                            brindándoles todo el apoyo y cuidado que necesitan. Hemos aportado con pañales, leche
-                            enshure, medicamentos y regalos institucionales, demostrando nuestro compromiso con la
-                            educación y el bienestar de los más jóvenes.
+                <a class="text-decoration-none text-black" href="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <div class="rda-card">
+                        <img src="<?php echo get_theme_file_uri("img/teleton.jpg") ?>" alt="Teletón">
+                        <div class="rda-card-body">
+                            <h5 class="rda-card__title">Teletón</h5>
+                            <p>El Instituto Teletón Valparaíso es un lugar clave para el bienestar de nuestros
+                                estudiantes, ya que el 60% de ellos acuden allí para ser atendidos por profesionales de
+                                diversas especialidades. La comunicación fluida entre la escuela y la Teletón es
+                                esencial para garantizar que los estudiantes reciban el mejor tratamiento posible.
 
-                            Además, hemos reconocido a los apoderados más destacados, valorando su esfuerzo y
-                            dedicación a la educación de sus hijos. Estamos muy agradecidos por la oportunidad de
-                            colaborar con la comunidad</p>
+                                La colaboración entre la escuela y la Teletón permite a los estudiantes recibir atención
+                                médica especializada, así como apoyo educativo y psicológico. Esto ayuda a mejorar su
+                                calidad de vida y a alcanzar su máximo potencial. Es esencial seguir fortaleciendo esta
+                                relación para continuar brindando el apoyo necesario a nuestros estudiantes y mejorar su
+                                experiencia en el Instituto Teletón Valparaíso.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-6">
-                <div class="rda-card">
-                    <img src="<?php echo get_theme_file_uri("img/refugiodecristo.jpg") ?>" alt="Refugio de Cristo">
-                    <div class="rda-card-body">
-                        <h5 class="rda-card__title">Refugio de Cristo</h5>
-                        <p>¡Qué bendición contar con el Refugio de Cristo como nuestro aliado! Desde el año 2008,
-                            nos han proporcionado una hermosa, segura y funcional infraestructura que nos ha
-                            permitido llevar a cabo nuestro proyecto educativo de manera efectiva.
+                <a class="text-decoration-none text-black" href="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <div class="rda-card">
+                        <img src="<?php echo get_theme_file_uri("img/rotaryclub.jpg") ?>" alt="Puertas del Rotary Club">
+                        <div class="rda-card-body">
+                            <h5 class="rda-card__title">Rotary Club (Norte)</h5>
+                            <p>¡Qué orgullo ser parte del Rotary Club de Viña del Mar! Desde el año 2016, nuestra
+                                organización se ha dedicado a apadrinar a todos los estudiantes de la escuela,
+                                brindándoles todo el apoyo y cuidado que necesitan. Hemos aportado con pañales, leche
+                                enshure, medicamentos y regalos institucionales, demostrando nuestro compromiso con la
+                                educación y el bienestar de los más jóvenes.
 
-                            Estamos muy agradecidos por su apoyo y confianza en nuestro trabajo, y estamos
-                            comprometidos a seguir haciendo uso de esta valiosa oportunidad para mejorar la calidad
-                            de nuestra educación. El Refugio de Cristo es una verdadera bendición para nuestra
-                            escuela.</p>
+                                Además, hemos reconocido a los apoderados más destacados, valorando su esfuerzo y
+                                dedicación a la educación de sus hijos. Estamos muy agradecidos por la oportunidad de
+                                colaborar con la comunidad</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-6">
-                <div class="rda-card">
-                    <img src="<?php echo get_theme_file_uri("img/iglesia.jpg") ?>" alt="Iglesia mormona">
-                    <div class="rda-card-body">
-                        <h5 class="rda-card__title">Iglesia de Jesucristo de los Santos de los ultimos días</h5>
-                        <p>¡Qué honor poder contar con el apoyo de la Iglesia de Jesucristo de los Santos de los
-                            Últimos Días! Desde hace más de 5 años, ponen a disposición sus dependencias para que
-                            nuestra escuela realice nuestra ceremonia de clausura, dándole un gran realce y
-                            hermosura a esta actividad. Estamos muy agradecidos por su generosidad y apoyo.
+                <a class="text-decoration-none text-black" href="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <div class="rda-card">
+                        <img src="<?php echo get_theme_file_uri("img/refugiodecristo.jpg") ?>" alt="Refugio de Cristo">
+                        <div class="rda-card-body">
+                            <h5 class="rda-card__title">Refugio de Cristo</h5>
+                            <p>¡Qué bendición contar con el Refugio de Cristo como nuestro aliado! Desde el año 2008,
+                                nos han proporcionado una hermosa, segura y funcional infraestructura que nos ha
+                                permitido llevar a cabo nuestro proyecto educativo de manera efectiva.
 
-                            Estamos emocionados de seguir colaborando juntos en el futuro. La presencia de la
-                            Iglesia de Jesucristo en nuestra ceremonia de clausura es un verdadero regalo, y estamos
-                            profundamente agradecidos por su contribución a nuestro éxito.</p>
+                                Estamos muy agradecidos por su apoyo y confianza en nuestro trabajo, y estamos
+                                comprometidos a seguir haciendo uso de esta valiosa oportunidad para mejorar la calidad
+                                de nuestra educación. El Refugio de Cristo es una verdadera bendición para nuestra
+                                escuela.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-6">
-                <div class="rda-card">
-                    <img src="<?php echo get_theme_file_uri("img/informatica.jpg") ?>"
-                        alt="Integrante del equipo de informática junto a niño de la escuela">
-                    <div class="rda-card-body">
-                        <h5 class="rda-card__title">Departamento de informática</h5>
-                        <p>¡Qué emocionante es saber que podemos contar con el apoyo del Departamento de Informática
-                            del Congreso Nacional! A partir del 2022, funcionarios de esta repartición han
-                            establecido un primer acercamiento con nosotros para apoyar a nuestros estudiantes.
+                <a class="text-decoration-none text-black" href="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <div class="rda-card">
+                        <img src="<?php echo get_theme_file_uri("img/iglesia.jpg") ?>" alt="Iglesia mormona">
+                        <div class="rda-card-body">
+                            <h5 class="rda-card__title">Iglesia de Jesucristo de los Santos de los ultimos días</h5>
+                            <p>¡Qué honor poder contar con el apoyo de la Iglesia de Jesucristo de los Santos de los
+                                Últimos Días! Desde hace más de 5 años, ponen a disposición sus dependencias para que
+                                nuestra escuela realice nuestra ceremonia de clausura, dándole un gran realce y
+                                hermosura a esta actividad. Estamos muy agradecidos por su generosidad y apoyo.
 
-                            Esto nos llena de alegría y esperanza, ya que significa que nuestra escuela es
-                            reconocida por su calidad y profesionalismo. Además, esta conexión nos permite ofrecer a
-                            nuestros estudiantes la oportunidad de adquirir experiencia práctica y aprender de los
-                            mejores profesionales del campo de la informática. Estamos muy agradecidos con el
-                            Departamento de Informática del Congreso Nacional por confiar en nosotros.</p>
+                                Estamos emocionados de seguir colaborando juntos en el futuro. La presencia de la
+                                Iglesia de Jesucristo en nuestra ceremonia de clausura es un verdadero regalo, y estamos
+                                profundamente agradecidos por su contribución a nuestro éxito.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a class="text-decoration-none text-black" href="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <div class="rda-card">
+                        <img src="<?php echo get_theme_file_uri("img/informatica.jpg") ?>"
+                            alt="Integrante del equipo de informática junto a niño de la escuela">
+                        <div class="rda-card-body">
+                            <h5 class="rda-card__title">Departamento de informática</h5>
+                            <p>¡Qué emocionante es saber que podemos contar con el apoyo del Departamento de Informática
+                                del Congreso Nacional! A partir del 2022, funcionarios de esta repartición han
+                                establecido un primer acercamiento con nosotros para apoyar a nuestros estudiantes.
+
+                                Esto nos llena de alegría y esperanza, ya que significa que nuestra escuela es
+                                reconocida por su calidad y profesionalismo. Además, esta conexión nos permite ofrecer a
+                                nuestros estudiantes la oportunidad de adquirir experiencia práctica y aprender de los
+                                mejores profesionales del campo de la informática. Estamos muy agradecidos con el
+                                Departamento de Informática del Congreso Nacional por confiar en nosotros.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="row pt-5 g-5">

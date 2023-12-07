@@ -47,8 +47,8 @@ function esjd_enqueue_style()
     );
     if (is_page('escuela')) {
         wp_enqueue_script(
-            'modal',
-            get_parent_theme_file_uri('js/modal.js')
+            'modalredes',
+            get_parent_theme_file_uri('js/modalredes.js')
         );
     }
 }

@@ -28,19 +28,17 @@ window.addEventListener("load", function () {
         document.querySelector("#menuAccesibilidad").classList.toggle("menu-accesibilidad--show");
     })
 
-    let menuItems = document.querySelectorAll('.link a');
-    // Agregar un event listener a cada elemento del menú
-    menuItems.forEach(function (item) {
-        item.addEventListener('click', function (event) {
-            // Prevenir el comportamiento predeterminado del enlace
+    let currentPageUrl = window.location.href;
 
-            // Remover la clase 'active' de todos los elementos
-            menuItems.forEach(function (item) {
-                item.classList.remove('active');
-            });
+    // Obtener todos los enlaces dentro del menú
+    let menuLinks = document.querySelectorAll('.link a');
 
-            // Agregar la clase 'active' al elemento clicado
-            item.classList.add('active');
-        });
+    // Iterar sobre cada enlace y agregar la clase "active" si la URL coincide
+    menuLinks.forEach(function (link) {
+        let linkUrl = link.getAttribute('href');
+
+        if (currentPageUrl === linkUrl) {
+            link.classList.add('active');
+        }
     });
 });

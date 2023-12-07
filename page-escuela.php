@@ -302,15 +302,15 @@
                 <div class="modal-content">
                     <div class="modal-header p-0">
                         <img class="imagen-modal" src="" alt="" id="modalImage">
+                        <h4 class="modal-title bg-accent-escuela"></h4>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-6" id="modalContent">
-                                    <h4 class="modal-title mb-3"></h4>
+                                <div class="col-lg-8 col-md-12" id="modalContent">
                                     <p class="modal-parrafo"></p>
                                 </div>
-                                <div class="lista-aportes col-md-6">
+                                <div class="lista-aportes col-lg-4 col-md-12">
                                     <ul>
                                         <li>a</li>
                                         <li>a</li>

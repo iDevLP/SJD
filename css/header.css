@@ -7,6 +7,7 @@
 .main-header {
     background-color: var(--primary-color);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
 }
 
 .logo {
@@ -55,7 +56,8 @@
 
 .link i {
     display: block;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .link:hover a {
@@ -69,6 +71,9 @@
     padding: 10px 10px 7px 10px;
     min-width: 100px;
     border-radius: 5px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .admision-link {

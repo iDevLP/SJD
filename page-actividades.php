@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<section class="container ">
+<section class="container">
     <div class="row align-items-center py-5">
         <div class="col-md-6">
             <div>
-                <span class="text-accent-escuela fw-bold">Recursos academicos para nuestro alumnado</span>
+                <span class="text-accent-escuela fw-bold">Recursos académicos para nuestro alumnado</span>
                 <h2 class="fw-bold">Actividades</h2>
                 <p>En la Escuela Especial San Juan de Dios, contamos con una amplia
                     gama de talleres laborales y cursos básicos que están diseñados para
@@ -19,7 +19,7 @@
 </section>
 <section class="py-5 container section-actividades">
     <div class="row py-3">
-        <h4 class="text-center fw-medium">Seleccione una categoría:</h4>
+        <h3 class="text-center fw-medium">Seleccione una categoría:</h3>
         <ul class="nav justify-content-center nav-underline" id="myTab" role="tablist">
 
             <li class="nav-item" role="presentation">

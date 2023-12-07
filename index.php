@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="">
-    <section class="container ">
+    <section class="container bg-danger">
         <div class="row align-items-center py-5">
             <div class="col-md-6">
                 <div>

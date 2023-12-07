@@ -1,0 +1,212 @@
+/**
+Theme Name: Website rediseñado Escuela Especial San Juan de Dios
+Theme URI: https://eesanjuandedios.cl
+Description: Examen transversal
+Version: 1.0
+Author: COD1NE
+Author URI: http://www.cod1ne.cl
+*/
+:root {
+    --primary-color: #0B0742;
+    --secondary-color: #3C4CAD;
+    --accent-color: #D61C4E;
+    --white: #fff;
+    --gray: #F3F3F3;
+    --black: #010101;
+    --gray-text: #272829;
+    --terapia-ocupacional: #219C90;
+}
+
+/* ------------------------------ TIPOGRAFÍA ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+.text-accent-escuela {
+    color: var(--accent-color);
+}
+
+.bg-primary-escuela {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.bg-secondary-escuela {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.bg-accent-escuela {
+    background-color: var(--accent-color);
+}
+
+.bg-gray-escuela {
+    background-color: var(--gray);
+}
+
+.bg-terapia-escuela {
+    background-color: var(--terapia-ocupacional);
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    min-width: 200px;
+    line-height: 40px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    transition: 200ms;
+}
+
+.button:hover {
+    background-color: #d6073e;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gabarito', sans-serif;
+}
+
+h1 {
+    font-size: 2.9rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p,
+span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.gray-scale {
+    transition: 500ms;
+    filter: grayscale(100%);
+}
+
+/* <<< SINGLE ACTIVIDADES >>> */
+.imagen-single img {
+    border-radius: 8px;
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+    object-fit: cover;
+    box-shadow: 0px 3px 6px 4px rgb(223, 223, 223);
+}
+
+.info-single {
+    text-align: center;
+}
+
+.info-single h5 {
+    font-family: 'Gabarito';
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.info-single h4 {
+    font-family: 'Gabarito';
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.info-single h6 {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.descripcion-single {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* <<< SINGLE ACTIVIDADES >>> */
+.footer-background {
+    background-color: var(--primary-color);
+}
+
+.footer-seccion {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-links h5 {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.enlace {
+    margin-bottom: 5px;
+}
+
+.linea {
+    border: 2px solid #ffffff;
+    margin: 40px 0px;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 100px;
+}
+
+.fila-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creditos {
+    align-items: center;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.creditos h5 {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.creditos h6 {
+    font-weight: 600;
+    color: #ffffff;
+}

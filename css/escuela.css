@@ -1,0 +1,45 @@
+.escuela-imagen {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.rda-imagen {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.rda-card {
+    display: flex;
+    cursor: pointer;
+}
+
+.rda-card:hover {
+    background-color: beige;
+}
+
+.rda-card img {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.rda-card__title {
+    font-weight: 600;
+}
+
+.rda-card-body {
+    padding-left: 10px;
+}
+
+.rda-card-body p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}

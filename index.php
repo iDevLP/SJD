@@ -4,7 +4,7 @@
         <div class="row align-items-center py-5">
             <div class="col-md-6">
                 <div>
-                    <span class="text-accent-escuela fw-bold">Escuela especial de retos múltiples</span>
+                    <span class="text-accent-escuela fw-bold">Mi nombre es Luis</span>
                     <h2 class="fw-bold">San Juan De Dios</h2>
                     <p>Somos una escuela con experiencia desde 1999, educamos niños, niñas y jóvenes con desafios
                         múltiples, físicos y cognitívos. Contamos con una infraestructura segura, equipada con lo

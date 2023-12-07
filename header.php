@@ -23,7 +23,7 @@
             </div>
             <ul id="main-menu-link-container">
                 <li class="link">
-                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <a class="active" href="<?php echo esc_url(home_url('/')); ?>">
                         <i class="fa-solid fa-house"></i>
                         Inicio</a>
                 </li>

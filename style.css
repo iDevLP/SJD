@@ -10,7 +10,7 @@ Author URI: http://www.cod1ne.cl
 /* ------------------------------ TIPOGRAFÍA ------------------------------ */
 
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700&display=swap');
 
 :root {
     --primary-color: #0B0742;
@@ -23,15 +23,8 @@ Author URI: http://www.cod1ne.cl
     --terapia-ocupacional: #219C90;
 }
 
-<<<<<<< HEAD
 /* ------------------------------ TIPOGRAFÍA ------------------------------ */
 
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
-
-=======
->>>>>>> refs/remotes/origin/main
 .text-accent-escuela {
     color: var(--accent-color);
 }

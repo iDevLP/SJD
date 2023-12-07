@@ -76,6 +76,10 @@
     font-weight: 500;
 }
 
+.link a.active {
+    background-color: var(--secondary-color);
+}
+
 .admision-link {
     background-color: var(--accent-color);
     border-radius: 5px;

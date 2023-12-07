@@ -27,14 +27,20 @@ window.addEventListener("load", function () {
     botonAccesibilidad.addEventListener("click", () => {
         document.querySelector("#menuAccesibilidad").classList.toggle("menu-accesibilidad--show");
     })
-    function setActive(element) {
-        // Remover la clase 'active' de todos los elementos
-        var menuItems = document.querySelectorAll('#link a');
-        menuItems.forEach(function (item) {
-            item.classList.remove('active');
-        });
 
-        // Agregar la clase 'active' al elemento clicado
-        element.classList.add('active');
-    }
+    let menuItems = document.querySelectorAll('.link a');
+    // Agregar un event listener a cada elemento del menú
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            // Prevenir el comportamiento predeterminado del enlace
+
+            // Remover la clase 'active' de todos los elementos
+            menuItems.forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            // Agregar la clase 'active' al elemento clicado
+            item.classList.add('active');
+        });
+    });
 });

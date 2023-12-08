@@ -4,7 +4,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div>
-                    <span class="text-accent-escuela fw-bold">Mi nombre es Luis</span>
+                    <span class="text-accent-escuela fw-bold">Escuela especial de retos múltiples</span>
                     <h2 class="fw-bold">San Juan De Dios</h2>
                     <p>Somos una escuela con experiencia desde 1999, educamos niños, niñas y jóvenes con desafios
                         múltiples, físicos y cognitívos. Contamos con una infraestructura segura, equipada con lo
@@ -86,8 +86,8 @@
     </section>
     <!-- --- Actividades --- -->
     <section class="container">
-        <h3 class="fw-bold">Actividades</h3>
-        <p class="mb-0 pb-0">Explora los recursos académicos que tenemos para nuestro alumnado de manera online</p>
+        <h3 class="fw-bold">Recursos académicos</h3>
+        <p class="mb-0 pb-0">Explora las actividades que tenemos para nuestro alumnado de manera online</p>
         <div class="actividades-card-container">
             <?php $the_query = new WP_Query(array('category_name' => 'actividad', 'posts_per_page' => 3)); ?>
             <?php if ($the_query->have_posts()): ?>

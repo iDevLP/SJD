@@ -15,6 +15,16 @@
     height: 50px;
 }
 
+.logotipo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logotipo-container {
+    display: flex;
+    align-items: center;
+}
+
 .main-menu-logo-section {
     display: flex;
     align-items: center;
@@ -101,64 +111,6 @@
     }
 }
 
-@media(width < 600px) {
-    .main-navbar {
-        display: block;
-    }
-
-    .logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    .main-menu-logo-section {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .main-menu-icon {
-        display: inline-block;
-    }
-
-    .main-navbar ul {
-        position: absolute;
-        top: 50px;
-        left: -300px;
-        width: 300px;
-        height: 80vh;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        background-color: var(--primary-color);
-        border-radius: 0px 0px 10px 0px;
-        z-index: 10;
-    }
-
-    .link {
-        text-align: left;
-        padding: 0px 20px;
-    }
-
-    .link i {
-        display: inline-block;
-        padding: 0px 5px;
-    }
-
-    .link a {
-        display: block;
-        line-height: 3rem;
-    }
-
-    .show-menu {
-        transform: translateX(300px);
-    }
-
-    .main-menu-logo-section {
-        height: 50px;
-    }
-}
-
 .menu-accesibilidad {
     position: fixed;
     bottom: 120px;
@@ -215,8 +167,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    padding: 20px;
     background-color: var(--accent-color);
     color: var(--white);
     border-radius: 50%;
@@ -229,7 +180,7 @@
 }
 
 .menu-accesibilidad-button__icon {
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: block;
 }
 
@@ -244,5 +195,67 @@
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+@media(width < 600px) {
+    .main-navbar {
+        display: block;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-menu-logo-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-menu-icon {
+        display: inline-block;
+    }
+
+    .main-navbar ul {
+        position: absolute;
+        top: 50px;
+        left: -300px;
+        width: 300px;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--primary-color);
+        border-radius: 0px 0px 10px 0px;
+        z-index: 10;
+    }
+
+    .link {
+        text-align: left;
+        padding: 0px 20px;
+    }
+
+    .link i {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+
+    .link a {
+        display: block;
+        line-height: 3rem;
+    }
+
+    .show-menu {
+        transform: translateX(300px);
+    }
+
+    .main-menu-logo-section {
+        height: 50px;
+    }
+
+    .menu-accesibilidad-button__icon {
+        font-size: 1.5rem;
     }
 }

@@ -35,18 +35,22 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            En la Escuela Especial San Juan de Dios, ofrecemos un curso para estudiantes de segundo
-                            y cuarto año de básico llamado Umaki, que en lengua Rapa Nui significa «luna pequeña».
-                            Este nombre refleja nuestro deseo de guiar a nuestros estudiantes en su camino de
-                            aprendizaje y crecimiento continuo, y nuestro respeto por la cultura y el patrimonio de
-                            los pueblos originarios de Chile. En el curso Umaki, nuestros estudiantes podrán
-                            adquirir las habilidades y conocimientos necesarios para tener éxito en sus estudios.
+                            <p>
+                                En la Escuela Especial San Juan de Dios, ofrecemos un curso para estudiantes de segundo
+                                y cuarto año de básico llamado Umaki, que en lengua Rapa Nui significa «luna pequeña».
+                                Este nombre refleja nuestro deseo de guiar a nuestros estudiantes en su camino de
+                                aprendizaje y crecimiento continuo, y nuestro respeto por la cultura y el patrimonio de
+                                los pueblos originarios de Chile. En el curso Umaki, nuestros estudiantes podrán
+                                adquirir las habilidades y conocimientos necesarios para tener éxito en sus estudios.
+                            </p>
                             <div class="profesional-card-container">
                                 <?php $the_query = new WP_Query(array('category_name' => 'Umaki')); ?>
                                 <?php if ($the_query->have_posts()): ?>
                                     <?php while ($the_query->have_posts()):
                                         $the_query->the_post(); ?>
-                                        <?php get_template_part("profesionalCard") ?>
+                                        <?php if (in_category("trabajadores") == true): ?>
+                                            <?php get_template_part("profesionalCard") ?>
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php else: ?>
@@ -67,22 +71,24 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            En la Escuela Especial San Juan de Dios, también ofrecemos un curso para estudiantes de
-                            sexto y séptimo año de básico llamado Willay, que en lengua Quechua significa
-                            «comunicar, avisar».
+                            <p>En la Escuela Especial San Juan de Dios, también ofrecemos un curso para estudiantes de
+                                sexto y séptimo año de básico llamado Willay, que en lengua Quechua significa
+                                «comunicar, avisar».
 
-                            Este nombre refleja nuestra intención de fomentar en nuestros estudiantes la importancia
-                            de la comunicación efectiva y de estar siempre al tanto de lo que sucede a su alrededor.
-                            Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
-                            nuestra conexión con esta rica cultura y su patrimonio. En el curso Willay, nuestros
-                            estudiantes podrán desarrollar habilidades de comunicación y pensamiento crítico, que
-                            les serán de gran utilidad en su vida académica
+                                Este nombre refleja nuestra intención de fomentar en nuestros estudiantes la importancia
+                                de la comunicación efectiva y de estar siempre al tanto de lo que sucede a su alrededor.
+                                Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
+                                nuestra conexión con esta rica cultura y su patrimonio. En el curso Willay, nuestros
+                                estudiantes podrán desarrollar habilidades de comunicación y pensamiento crítico, que
+                                les serán de gran utilidad en su vida académica</p>
                             <div class="profesional-card-container">
                                 <?php $the_query = new WP_Query(array('category_name' => 'Willay')); ?>
                                 <?php if ($the_query->have_posts()): ?>
                                     <?php while ($the_query->have_posts()):
                                         $the_query->the_post(); ?>
-                                        <?php get_template_part("profesionalCard") ?>
+                                        <?php if (in_category("trabajadores") == true): ?>
+                                            <?php get_template_part("profesionalCard") ?>
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php else: ?>
@@ -103,21 +109,23 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            En la Escuela Especial San Juan de Dios, también tenemos un curso para estudiantes de
-                            octavo año de básico llamado Riku, que en lengua Mapudungun significa «brote vegetal que
-                            nace después de la lluvia».
+                            <p>En la Escuela Especial San Juan de Dios, también tenemos un curso para estudiantes de
+                                octavo año de básico llamado Riku, que en lengua Mapudungun significa «brote vegetal que
+                                nace después de la lluvia».
 
-                            Este nombre refleja nuestro deseo de fomentar en nuestros estudiantes el crecimiento y
-                            la renovación constante, al igual que un brote vegetal que emerge después de una lluvia.
-                            Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
-                            nuestra conexión con esta rica cultura y su patrimonio. En el curso Riku, nuestros
-                            estudiantes podrán desarrollar habilidades
+                                Este nombre refleja nuestro deseo de fomentar en nuestros estudiantes el crecimiento y
+                                la renovación constante, al igual que un brote vegetal que emerge después de una lluvia.
+                                Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
+                                nuestra conexión con esta rica cultura y su patrimonio. En el curso Riku, nuestros
+                                estudiantes podrán desarrollar habilidades</p>
                             <div class="profesional-card-container">
                                 <?php $the_query = new WP_Query(array('category_name' => 'Riku')); ?>
                                 <?php if ($the_query->have_posts()): ?>
                                     <?php while ($the_query->have_posts()):
                                         $the_query->the_post(); ?>
-                                        <?php get_template_part("profesionalCard") ?>
+                                        <?php if (in_category("trabajadores") == true): ?>
+                                            <?php get_template_part("profesionalCard") ?>
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php else: ?>
@@ -138,22 +146,24 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
-                            estudiantes de primer año, llamado Kimn, que en lengua Mapudungun significa «aprender,
-                            conocer, saber».
+                            <p>En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
+                                estudiantes de primer año, llamado Kimn, que en lengua Mapudungun significa «aprender,
+                                conocer, saber».
 
-                            Este nombre refleja nuestro compromiso con la enseñanza y el aprendizaje continuo, y
-                            nuestro deseo de fomentar en nuestros estudiantes el interés por adquirir nuevos
-                            conocimientos y habilidades. Al utilizar un término de una lengua originaria, queremos
-                            mostrar nuestro respeto y nuestra conexión con esta rica cultura y su patrimonio. En el
-                            curso Taller Laboral Kimn, nuestros estudiantes podrán adquirir las habilidades
-                            prácticas y teóricas
+                                Este nombre refleja nuestro compromiso con la enseñanza y el aprendizaje continuo, y
+                                nuestro deseo de fomentar en nuestros estudiantes el interés por adquirir nuevos
+                                conocimientos y habilidades. Al utilizar un término de una lengua originaria, queremos
+                                mostrar nuestro respeto y nuestra conexión con esta rica cultura y su patrimonio. En el
+                                curso Taller Laboral Kimn, nuestros estudiantes podrán adquirir las habilidades
+                                prácticas y teóricas</p>
                             <div class="profesional-card-container">
                                 <?php $the_query = new WP_Query(array('category_name' => 'Kimn')); ?>
                                 <?php if ($the_query->have_posts()): ?>
                                     <?php while ($the_query->have_posts()):
                                         $the_query->the_post(); ?>
-                                        <?php get_template_part("profesionalCard") ?>
+                                        <?php if (in_category("trabajadores") == true): ?>
+                                            <?php get_template_part("profesionalCard") ?>
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php else: ?>
@@ -174,21 +184,25 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
-                            estudiantes de primer año, llamado Amulen, que en lengua Mapudungun significa
-                            «progresar, avanzar».
+                            <p>
+                                En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
+                                estudiantes de primer año, llamado Amulen, que en lengua Mapudungun significa
+                                «progresar, avanzar».
 
-                            Este nombre refleja nuestro compromiso con el desarrollo y el crecimiento continuo de
-                            nuestros estudiantes, y nuestro deseo de fomentar en ellos el interés por adquirir
-                            nuevas habilidades y avanzar en sus carreras profesionales. Al utilizar un término de
-                            una lengua originaria, queremos mostrar nuestro respeto y nuestra conexión con esta rica
-                            cultura y su patrimonio.
+                                Este nombre refleja nuestro compromiso con el desarrollo y el crecimiento continuo de
+                                nuestros estudiantes, y nuestro deseo de fomentar en ellos el interés por adquirir
+                                nuevas habilidades y avanzar en sus carreras profesionales. Al utilizar un término de
+                                una lengua originaria, queremos mostrar nuestro respeto y nuestra conexión con esta rica
+                                cultura y su patrimonio.
+                            </p>
                             <div class="profesional-card-container">
                                 <?php $the_query = new WP_Query(array('category_name' => 'Amulen')); ?>
                                 <?php if ($the_query->have_posts()): ?>
                                     <?php while ($the_query->have_posts()):
                                         $the_query->the_post(); ?>
-                                        <?php get_template_part("profesionalCard") ?>
+                                        <?php if (in_category("trabajadores") == true): ?>
+                                            <?php get_template_part("profesionalCard") ?>
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php else: ?>
@@ -209,24 +223,28 @@
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
-                            estudiantes de segundo año, llamado A Koa, que en lengua Rapa Nui significa «alegres,
-                            contentos».
+                            <p>
+                                En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
+                                estudiantes de segundo año, llamado A Koa, que en lengua Rapa Nui significa «alegres,
+                                contentos».
 
-                            Este nombre refleja nuestro deseo de fomentar un ambiente de aprendizaje positivo y
-                            agradable en nuestra escuela, y de transmitir a nuestros estudiantes la importancia de
-                            disfrutar del proceso de aprendizaje.
+                                Este nombre refleja nuestro deseo de fomentar un ambiente de aprendizaje positivo y
+                                agradable en nuestra escuela, y de transmitir a nuestros estudiantes la importancia de
+                                disfrutar del proceso de aprendizaje.
 
-                            Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
-                            nuestra conexión con esta rica cultura y su patrimonio. En el curso Taller Laboral A
-                            Koa, nuestros estudiantes podrán adquirir las habilidades prácticas y teóricas
-                            necesarias para desempeñarse.
+                                Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
+                                nuestra conexión con esta rica cultura y su patrimonio. En el curso Taller Laboral A
+                                Koa, nuestros estudiantes podrán adquirir las habilidades prácticas y teóricas
+                                necesarias para desempeñarse.
+                            </p>
                             <div class="profesional-card-container">
                                 <?php $the_query = new WP_Query(array('category_name' => 'A koa')); ?>
                                 <?php if ($the_query->have_posts()): ?>
                                     <?php while ($the_query->have_posts()):
                                         $the_query->the_post(); ?>
-                                        <?php get_template_part("profesionalCard") ?>
+                                        <?php if (in_category("trabajadores") == true): ?>
+                                            <?php get_template_part("profesionalCard") ?>
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php else: ?>
@@ -247,23 +265,27 @@
                     </h2>
                     <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
-                            estudiantes de tercer año, llamado Rakiduam, que en lengua mapudungum significa
-                            «pensamiento, intención, opinión».
+                            <p>
+                                En la Escuela Especial San Juan de Dios, también ofrecemos un curso Taller Laboral para
+                                estudiantes de tercer año, llamado Rakiduam, que en lengua mapudungum significa
+                                «pensamiento, intención, opinión».
 
-                            Este nombre refleja nuestro deseo de fomentar un ambiente de aprendizaje positivo y
-                            agradable en nuestra escuela, y de transmitir a nuestros estudiantes la importancia de
-                            disfrutar del proceso de aprendizaje, teniendo los princinpios del significado del
-                            nombre.
+                                Este nombre refleja nuestro deseo de fomentar un ambiente de aprendizaje positivo y
+                                agradable en nuestra escuela, y de transmitir a nuestros estudiantes la importancia de
+                                disfrutar del proceso de aprendizaje, teniendo los princinpios del significado del
+                                nombre.
 
-                            Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
-                            nuestra conexión con esta rica cultura y su patrimonio.
+                                Al utilizar un término de una lengua originaria, queremos mostrar nuestro respeto y
+                                nuestra conexión con esta rica cultura y su patrimonio.
+                            </p>
                             <div class="profesional-card-container">
                                 <?php $the_query = new WP_Query(array('category_name' => 'Rakiduam')); ?>
                                 <?php if ($the_query->have_posts()): ?>
                                     <?php while ($the_query->have_posts()):
                                         $the_query->the_post(); ?>
-                                        <?php get_template_part("profesionalCard") ?>
+                                        <?php if (in_category("trabajadores") == true): ?>
+                                            <?php get_template_part("profesionalCard") ?>
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php else: ?>

@@ -15,9 +15,9 @@
     <header class="main-header">
         <nav class="container main-navbar">
             <div class="main-menu-logo-section">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
+                <a class="logotipo-container" href="<?php echo esc_url(home_url('/')); ?>">
                     <img class="logo" src="<?php echo get_theme_file_uri("img/logo.png"); ?>" alt="">
-                    <span>Escuela San Juan De Dios</span>
+                    <span class="logotipo">San Juan De Dios</span>
                 </a>
                 <img class="main-menu-icon" src="<?php echo get_theme_file_uri("icons/bars-solid.svg") ?>" alt="">
             </div>

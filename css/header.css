@@ -7,7 +7,7 @@
 .main-header {
     background-color: var(--primary-color);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 10px;
+    padding: 2px;
 }
 
 .logo {
@@ -56,7 +56,7 @@
 
 .link i {
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 1.5rem;
 }
 
@@ -68,12 +68,12 @@
     display: inline-block;
     color: white;
     text-decoration: none;
-    padding: 10px 10px 7px 10px;
-    min-width: 100px;
+    padding: 5px 10px;
+    min-width: 70px;
     border-radius: 5px;
     font-size: 0.75rem;
-    text-transform: uppercase;
     font-weight: 500;
+    letter-spacing: 0.05rem;
 }
 
 .link a.active {
@@ -86,8 +86,8 @@
 }
 
 .main-menu-icon {
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
     display: none;
     cursor: pointer;
 }
@@ -105,6 +105,11 @@
         display: block;
     }
 
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
     .main-menu-logo-section {
         width: 100%;
         display: flex;
@@ -117,12 +122,13 @@
 
     .main-navbar ul {
         position: absolute;
-        top: 75px;
+        top: 50px;
         left: -300px;
         width: 300px;
         height: 80vh;
         flex-direction: column;
         justify-content: center;
+        gap: 10px;
         background-color: var(--primary-color);
         border-radius: 0px 0px 10px 0px;
         z-index: 10;
@@ -140,12 +146,16 @@
 
     .link a {
         display: block;
+        line-height: 3rem;
     }
 
     .show-menu {
         transform: translateX(300px);
     }
 
+    .main-menu-logo-section {
+        height: 50px;
+    }
 }
 
 .menu-accesibilidad {

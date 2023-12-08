@@ -17,47 +17,47 @@
         </div>
     </div>
 </section>
-<section class="py-5 container section-actividades">
+<section class="pb-5 container section-actividades">
     <div class="row py-3">
         <h3 class="text-center fw-medium">Seleccione un curso:</h3>
-        <ul class="nav justify-content-center nav-underline" id="myTab" role="tablist">
+        <nav>
+            <ul class="nav justify-content-center nav-underline" id="myTab" role="tablist">
 
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="Todos" data-bs-toggle="tab" data-bs-target="#Todos-pane"
-                    type="button" role="tab" aria-controls="Todos-pane" aria-selected="true">Todos</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="umaki-tab" data-bs-toggle="tab" data-bs-target="#umaki-tab-pane"
-                    type="button" role="tab" aria-controls="umaki-tab-pane" aria-selected="false">Umaki</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="willay-tab" data-bs-toggle="tab" data-bs-target="#willay-tab-pane"
-                    type="button" role="tab" aria-controls="willay-tab-pane" aria-selected="false">Willay</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="riku-tab" data-bs-toggle="tab" data-bs-target="#riku-tab-pane"
-                    type="button" role="tab" aria-controls="riku-tab-pane" aria-selected="false">Riku</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="kimn-tab" data-bs-toggle="tab" data-bs-target="#kimn-tab-pane"
-                    type="button" role="tab" aria-controls="kimn-tab-pane" aria-selected="false">Kimn</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="amulen-tab" data-bs-toggle="tab" data-bs-target="#amulen-tab-pane"
-                    type="button" role="tab" aria-controls="amulen-tab-pane" aria-selected="false">Amulen</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="akoa-tab" data-bs-toggle="tab" data-bs-target="#akoa-tab-pane"
-                    type="button" role="tab" aria-controls="akoa-tab-pane" aria-selected="false">A Koa</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="rakiduam-tab" data-bs-toggle="tab" data-bs-target="#rakiduam-tab-pane"
-                    type="button" role="tab" aria-controls="rakiduam-tab-pane" aria-selected="false">Rakiduam</button>
-            </li>
-        </ul>
-
-
-
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="Todos" data-bs-toggle="tab" data-bs-target="#Todos-pane"
+                        type="button" role="tab" aria-controls="Todos-pane" aria-selected="true">Todos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="umaki-tab" data-bs-toggle="tab" data-bs-target="#umaki-tab-pane"
+                        type="button" role="tab" aria-controls="umaki-tab-pane" aria-selected="false">Umaki</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="willay-tab" data-bs-toggle="tab" data-bs-target="#willay-tab-pane"
+                        type="button" role="tab" aria-controls="willay-tab-pane" aria-selected="false">Willay</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="riku-tab" data-bs-toggle="tab" data-bs-target="#riku-tab-pane"
+                        type="button" role="tab" aria-controls="riku-tab-pane" aria-selected="false">Riku</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="kimn-tab" data-bs-toggle="tab" data-bs-target="#kimn-tab-pane"
+                        type="button" role="tab" aria-controls="kimn-tab-pane" aria-selected="false">Kimn</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="amulen-tab" data-bs-toggle="tab" data-bs-target="#amulen-tab-pane"
+                        type="button" role="tab" aria-controls="amulen-tab-pane" aria-selected="false">Amulen</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="akoa-tab" data-bs-toggle="tab" data-bs-target="#akoa-tab-pane"
+                        type="button" role="tab" aria-controls="akoa-tab-pane" aria-selected="false">A Koa</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rakiduam-tab" data-bs-toggle="tab" data-bs-target="#rakiduam-tab-pane"
+                        type="button" role="tab" aria-controls="rakiduam-tab-pane"
+                        aria-selected="false">Rakiduam</button>
+                </li>
+            </ul>
+        </nav>
 
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane  show active" id="Todos-pane" role="tabpanel" aria-labelledby="Todos" tabindex="0">

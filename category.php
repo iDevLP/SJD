@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="box-secciones">
-    <section class="container">
+    <section class="container my-5">
         <h1>Publicaciones de:
             <?php single_cat_title(); ?>
         </h1>

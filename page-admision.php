@@ -51,7 +51,7 @@
                         <p class="parrafo-gerald1 my-4">Contamos con una amplia gama de talleres laborales y cursos
                             básicos que están diseñados para satisfacer las necesidades de aprendizaje de todos nuestros
                             estudiantes.</p>
-                        <div class="mt-5"><button class="button"><a class="text-decoration-none text-white"
+                        <div class="mt-4"><button class="button"><a class="text-decoration-none text-white"
                                     href="">Conocer
                                     cursos</a></div>
                     </div>
@@ -62,7 +62,7 @@
                         <p class="parrafo-gerald1 my-4">En nuestra escuela contamos con una serie de dependencias
                             diseñadas para brindar a nuestros estudiantes un ambiente de aprendizaje cómodo y acogedor.
                         </p>
-                        <div class="mt-5"><button class="button"><a class="text-decoration-none text-white"
+                        <div class="mt-4"><button class="button"><a class="text-decoration-none text-white"
                                     href="">Conocer
                                     dependencias</a></button></div>
                     </div>

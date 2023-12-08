@@ -537,12 +537,12 @@
         </div>
         <div class="row pt-5 g-5">
             <div class="col-md-6">
-                <h3 class="fw-bold">Postular ayuda para la escuela</h3>
+                <h3 class="fw-bold mb-4">Ayuda a nuestra escuela</h3>
                 <form class="formulario" action="">
                     <div>
                         <label for="nombre">Nombre:</label>
                         <input class="formulario__item" type="text" name="nombre" id="nombre"
-                            placeholder="Ejemplo: Luis Pastén" required>
+                            placeholder="Ejemplo: Jhon Doe" required>
                         <span class="error">✘ Ingresa tu nombre</span>
                         <span class="correcto">✔ Bien hecho!</span>
                     </div>
@@ -572,7 +572,7 @@
                         <span class="correcto">✔ Bien hecho!</span>
                     </div>
                     <div class="formulario__full">
-                        <button class="button" type="submit">Postular red</button>
+                        <button class="button mt-4" type="submit">Postular red</button>
                     </div>
                 </form>
             </div>

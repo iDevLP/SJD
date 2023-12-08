@@ -4,7 +4,7 @@
         <div class="col-md-6">
             <div>
                 <span class="text-accent-escuela fw-bold">Recursos académicos para nuestro alumnado</span>
-                <h2 class="fw-bold">Actividades</h2>
+                <h2 class="fw-bold">Actividades Online</h2>
                 <p>En la Escuela Especial San Juan de Dios, contamos con una amplia
                     gama de talleres laborales y cursos básicos que están diseñados para
                     satisfacer las necesidades de aprendizaje de todos nuestros

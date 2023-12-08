@@ -23,71 +23,82 @@
     <!-- --- Nuestras características --- -->
     <section class="bg-gray-escuela">
         <div class="container ">
-            <h3 class="fw-bold">Nuestras características</h3>
-            <div class="row align-items-center justify-content-center ">
+            <span class="text-accent-escuela fw-bold">Los mejores de la región.</span>
+            <h3 class="fw-bold mb-5">Nuestras características</h3>
+            <div class="row gy-5">
                 <div class="col-md-4">
-                    <div class="caracteristicas-card">
-                        <img src="<?php echo get_theme_file_uri("img/dove-solid.png") ?>" alt="">
+                    <article class="caracteristicas-card">
+                        <header class="caracteristicas-card__header">
+                            <i class="caracteristicas-card__icon fa-solid fa-dove"></i>
+                        </header>
                         <h5 class="caracteristicas-card__title">Espíritu y bondad</h5>
                         <p>Nuestros estudiantes participan en un ambiente de cooperación y colaboración en la
                             escuela.
                         </p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4">
-                    <div class="caracteristicas-card">
+                    <article class="caracteristicas-card">
                         <img class="caracteristicas__img"
                             src="<?php echo get_theme_file_uri("img/college students-rafiki.png") ?>" alt="">
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4">
-                    <div class="caracteristicas-card">
-                        <img src="<?php echo get_theme_file_uri("img/sack-dollar-solid.png") ?>" alt="">
+                    <article class="caracteristicas-card">
+                        <header class="caracteristicas-card__header">
+                            <i class="caracteristicas-card__icon fa-solid fa-sack-dollar"></i>
+                        </header>
                         <h5 class="caracteristicas-card__title">Gratuita</h5>
-                        <p>Nuestra escuela se sustenta con aportes de terceros, razón por la cual no tengras que
+                        <p>Nuestra escuela se sustenta con aportes de terceros, razón por la cual no tendras que
                             pagar
                             nada.
                         </p>
-                    </div>
+                    </article>
 
                 </div>
                 <div class="col-md-4">
-                    <div class="caracteristicas-card">
-                        <img src="<?php echo get_theme_file_uri("img/ranking-star-solid.png") ?>" alt="">
+                    <article class="caracteristicas-card">
+                        <header class="caracteristicas-card__header">
+                            <i class="caracteristicas-card__icon fa-solid fa-ranking-star"></i>
+                        </header>
                         <h5 class="caracteristicas-card__title">Calidad en educación</h5>
                         <p>Nuestros docentes y especialistas trabajan en conjunto para ofrecer una educación de alta
                             calidad
-                            a sus estudiantes</p>
-                    </div>
+                            a sus estudiantes.</p>
+                    </article>
 
                 </div>
                 <div class="col-md-4">
-                    <div class="caracteristicas-card">
-                        <img src="<?php echo get_theme_file_uri("img/shield-heart-solid.png") ?>" alt="">
+                    <article class="caracteristicas-card">
+                        <header class="caracteristicas-card__header">
+                            <i class="caracteristicas-card__icon fa-solid fa-shield-heart"></i>
+                        </header>
                         <h5 class="caracteristicas-card__title">Aula segura</h5>
-                        <p>Promovemos un estilo de vida saludable en el aula y ofrecemos recursos y programas para
+                        <p>Ofrecemos recursos y programas para
                             mejorar
-                            la alimentación, la actividad física y el bienestar emocional</p>
-                    </div>
+                            la alimentación, la actividad física y el bienestar emocional.</p>
+                    </article>
 
                 </div>
                 <div class="col-md-4">
-                    <div class="caracteristicas-card">
-                        <img src="<?php echo get_theme_file_uri("img/face-laugh-beam-regular.png") ?>" alt="">
+                    <article class="caracteristicas-card">
+                        <header class="caracteristicas-card__header">
+                            <i class="caracteristicas-card__icon fa-solid fa-face-laugh-beam"></i>
+                        </header>
                         <h5 class="caracteristicas-card__title">Aprendizaje divertido</h5>
                         <p>Realizamos actividades y eventos que les permiten aprender de una manera divertida y
                             lúdica.
                         </p>
-                    </div>
-
+                    </article>
                 </div>
             </div>
         </div>
     </section>
     <!-- --- Actividades --- -->
     <section class="container">
+        <span class="text-accent-escuela fw-bold">Actividades en casa.</span>
         <h3 class="fw-bold">Recursos académicos</h3>
-        <p class="mb-0 pb-0">Explora las actividades que tenemos para nuestro alumnado de manera online</p>
+        <p class="mb-0 pb-0">Explora las actividades que tenemos para nuestro alumnado de manera online.</p>
         <div class="actividades-card-container">
             <?php $the_query = new WP_Query(array('category_name' => 'actividad', 'posts_per_page' => 3)); ?>
             <?php if ($the_query->have_posts()): ?>
@@ -102,7 +113,7 @@
                 </p>
             <?php endif; ?>
         </div>
-        <div class="d-flex justify-content-center ">
+        <div class="d-flex justify-content-center mt-4 ">
             <a href="<?php echo esc_url(home_url('actividades/')); ?>"
                 class="button enter--button text-center text-decoration-none">Ver Actividades</a>
         </div>
@@ -128,7 +139,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img class="middle-image" src="<?php echo get_theme_file_uri("img/testimonio.png") ?>" alt="">
+                <img class="testimonios__image" src="<?php echo get_theme_file_uri("img/testimonio.png") ?>" alt="">
             </div>
         </div>
     </section>

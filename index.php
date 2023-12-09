@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img class="middle-image" src="<?php echo get_theme_file_uri("img/Happy student-rafiki.png") ?>" alt="">
+                <img class="middle-image" src="<?php echo get_theme_file_uri("img/banner.png") ?>" alt="">
             </div>
         </div>
     </section>

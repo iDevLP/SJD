@@ -31,7 +31,7 @@
 }
 
 .caracteristicas-card__header {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     border-radius: 5px;
     max-width: 50px;
     text-align: center;

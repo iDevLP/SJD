@@ -83,3 +83,17 @@
     left: 0;
     color: #fff;
 }
+
+.video-list {
+    list-style: none;
+    padding: 0;
+}
+
+.video-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.video-title.active {
+    color: red;
+}

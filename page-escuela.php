@@ -300,6 +300,40 @@
             </div>
         </div>
     </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="videos">
+                    <?php $the_query = new WP_Query(array('category_name' => 'videos')); ?>
+                    <?php if ($the_query->have_posts()): ?>
+                        <ul class="video-list">
+                            <?php while ($the_query->have_posts()):
+                                $the_query->the_post(); ?>
+                                <?php if (in_category("videos") == true): ?>
+                                    <li class="video-item"
+                                        data-video-url="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>">
+                                        <span class="video-title">
+                                            <?php the_title(); ?>
+                                        </span>
+                                    </li>
+                                <?php endif; ?>
+                            <?php endwhile; ?>
+                        </ul>
+                        <?php wp_reset_postdata(); ?>
+                    <?php else: ?>
+                        <p>
+                            <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
+                        </p>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="video-player">
+                    <!-- Aquí se mostrará el video de WordPress -->
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="redesDeAyuda" class="container">
         <div class="row pb-5 fila-redes">
             <div class="col-md-6">

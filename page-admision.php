@@ -39,7 +39,7 @@
     </div>
 </div>
 
-<div class="fondo-azul py-5 text-white">
+<div class="bg-secondary-escuela py-5 text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-12 mx-auto">
@@ -48,22 +48,20 @@
                         <img class="my-4 img-fluid"
                             src="<?php echo get_stylesheet_directory_uri(); ?>/img/admision-contacto.png">
                         <h4 class="titulo-gerald3">Conoce nuestros cursos</h4>
-                        <p class="parrafo-gerald1 my-4">Contamos con una amplia gama de talleres laborales y cursos
+                        <p class="parrafo-gerald1 my-3">Contamos con una amplia gama de talleres laborales y cursos
                             básicos que están diseñados para satisfacer las necesidades de aprendizaje de todos nuestros
                             estudiantes.</p>
-                        <div class="mt-4"><button class="button"><a class="text-decoration-none text-white"
-                                    href="">Conocer
+                        <div><button class="button"><a class="text-decoration-none text-white" href="">Conocer
                                     cursos</a></div>
                     </div>
                     <div class="col-lg-5 col-md-12">
                         <img class="my-4 img-fluid"
                             src="<?php echo get_stylesheet_directory_uri(); ?>/img/admision-depen.png">
                         <h4 class="titulo-gerald3">Conoce nuestras dependencias</h4>
-                        <p class="parrafo-gerald1 my-4">En nuestra escuela contamos con una serie de dependencias
+                        <p class="parrafo-gerald1 my-3">En nuestra escuela contamos con una serie de dependencias
                             diseñadas para brindar a nuestros estudiantes un ambiente de aprendizaje cómodo y acogedor.
                         </p>
-                        <div class="mt-4"><button class="button"><a class="text-decoration-none text-white"
-                                    href="">Conocer
+                        <div><button class="button"><a class="text-decoration-none text-white" href="">Conocer
                                     dependencias</a></button></div>
                     </div>
                 </div>
@@ -127,7 +125,7 @@
                     <span class="correcto">✔ Bien hecho!</span>
                 </div>
                 <div class="formulario__full">
-                    <button class="button" type="submit">Enviar</button>
+                    <button class="button mt-4" type="submit">Enviar</button>
                 </div>
             </form>
         </div>

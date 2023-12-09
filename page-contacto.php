@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <span class="correcto">✔ Bien hecho!</span>
                                 </div>
                                 <div class="formulario__full">
-                                    <button class="button" type="submit">Enviar</button>
+                                    <button class="button mt-4" type="submit">Enviar</button>
                                 </div>
                             </form>
                         </div>

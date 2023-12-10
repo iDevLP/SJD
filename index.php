@@ -133,7 +133,7 @@
                         progresar gracias a la educación especial que reciben en la escuela.
                     </p>
                     <div>
-                        <a href="<?php echo esc_url(home_url('escuela/')); ?>"
+                        <a href="<?php echo esc_url(home_url('escuela/#testimonios')); ?>"
                             class=" button text-center text-decoration-none">Nuestros testimonios</a>
                     </div>
                 </div>

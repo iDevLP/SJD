@@ -52,14 +52,14 @@
     </header>
     <div id="menuAccesibilidad" class="menu-accesibilidad">
         <div class="menu-accesibilidad-letter-container">
-            <button id="disminuirLetra"
-                class="menu-accesibilidad__button-letra menu-accesibilidad__button"><span>-</span></button>
-            <span>Letra</span>
-            <button id="agrandarLetra"
-                class="menu-accesibilidad__button-letra menu-accesibilidad__button"><span>+</span></button>
+
+            <button id="agrandarLetra" class="menu-accesibilidad__button-letra menu-accesibilidad__button"><span>+
+                    <br>Agrandar letra</span></button>
+            <button id="disminuirLetra" class="menu-accesibilidad__button-letra menu-accesibilidad__button"><span>-
+                    <br> Disminuir letra</span></button>
+            <button id="escalaGrises" class="menu-accesibilidad__button menu-accesibilidad__button-contraste">
+                <span class=""><i class="fa-solid fa-circle-half-stroke"></i><br> Contraste</span></button>
         </div>
-        <button id="escalaGrises" class="menu-accesibilidad__button menu-accesibilidad__button-contraste"><i
-                class="fa-solid fa-circle-half-stroke"></i><span class="">Contraste</span></button>
     </div>
     <div id="accesibilidadButton" class="accesibilidad-button">
         <i class="menu-accesibilidad-button__icon fa-solid fa-universal-access"></i>

@@ -50,11 +50,8 @@ function esjd_enqueue_style()
             'modalredes',
             get_parent_theme_file_uri('js/modalredes.js')
         );
-        wp_enqueue_script(
-            'videos',
-            get_parent_theme_file_uri('js/videos.js')
-        );
     }
 }
 add_action('wp_enqueue_scripts', 'esjd_enqueue_style');
+
 ?>

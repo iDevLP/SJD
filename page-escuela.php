@@ -302,38 +302,64 @@
     </section>
     <section class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 mx-auto">
+                <span class="text-accent-escuela fw-bold">Muy recomendados</span>
+                <h3 class="fw-bold ">Testimonios de los padres.</h3>
                 <div class="videos">
-                    <?php $the_query = new WP_Query(array('category_name' => 'videos')); ?>
-                    <?php if ($the_query->have_posts()): ?>
-                        <ul class="video-list">
-                            <?php while ($the_query->have_posts()):
-                                $the_query->the_post(); ?>
-                                <?php if (in_category("videos") == true): ?>
-                                    <li class="video-item"
-                                        data-video-url="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>">
-                                        <span class="video-title">
-                                            <?php the_title(); ?>
-                                        </span>
-                                    </li>
-                                <?php endif; ?>
-                            <?php endwhile; ?>
-                        </ul>
-                        <?php wp_reset_postdata(); ?>
-                    <?php else: ?>
-                        <p>
-                            <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
-                        </p>
-                    <?php endif; ?>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="video-player">
-                    <!-- Aquí se mostrará el video de WordPress -->
+                    <div class="row">
+                        <?php $the_query = new WP_Query(array('category_name' => 'videos')); ?>
+                        <?php if ($the_query->have_posts()): ?>
+                            <div class="d-flex flex-md-row flex-column">
+                                <div class="col-md-4">
+                                    <div class="nav flex-column nav-pills me-3 my-3" id="v-pills-tab" role="tablist">
+                                        <?php while ($the_query->have_posts()):
+                                            $the_query->the_post(); ?>
+                                            <?php if (in_category("videos") == true): ?>
+                                                <button
+                                                    class="my-3 nav-link<?php echo $the_query->current_post === 0 ? ' active' : ''; ?>"
+                                                    id="v-pills-<?php echo sanitize_title(get_the_title()); ?>-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-<?php echo sanitize_title(get_the_title()); ?>"
+                                                    type="button" role="tab"
+                                                    aria-controls="v-pills-<?php echo sanitize_title(get_the_title()); ?>"
+                                                    aria-selected="<?php echo $the_query->current_post === 0 ? 'true' : 'false'; ?>">
+                                                    <?php the_title(); ?>
+                                                </button>
+                                            <?php endif; ?>
+                                        <?php endwhile; ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="tab-content my-3" id="v-pills-tabContent">
+                                        <?php while ($the_query->have_posts()):
+                                            $the_query->the_post(); ?>
+                                            <?php if (in_category("videos") == true): ?>
+                                                <div class="tab-pane fade<?php echo $the_query->current_post === 0 ? ' show active' : ''; ?>"
+                                                    id="v-pills-<?php echo sanitize_title(get_the_title()); ?>" role="tabpanel"
+                                                    aria-labelledby="v-pills-<?php echo sanitize_title(get_the_title()); ?>-tab"
+                                                    tabindex="0">
+                                                    <div class="ratio ratio-16x9">
+                                                        <?php the_content(); ?>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                        <?php endwhile; ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php wp_reset_postdata(); ?>
+                        <?php else: ?>
+                            <p>
+                                <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
+                            </p>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <section id="redesDeAyuda" class="container">
         <div class="row pb-5 fila-redes">
             <div class="col-md-6">

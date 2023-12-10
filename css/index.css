@@ -40,7 +40,7 @@
 .caracteristicas__img {
     max-height: 180px;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .caracteristicas-card {

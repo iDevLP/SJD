@@ -1,4 +1,4 @@
-<section class="section-actividades">
+<section id="equipo" class="section-actividades">
     <div class="row">
         <div class="col-md-8 mx-auto">
             <span class="text-accent-escuela fw-bold text-center d-block ">Conoce a nuestro equipo</span>

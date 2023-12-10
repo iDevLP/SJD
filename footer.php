@@ -9,67 +9,74 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 footer-links ">
                     <h5>Actividades</h5>
                     <div class="enlace">
-                        <a href="">Talleres</a><br>
+                        <a href="<?php echo esc_url(home_url('category/umaki')); ?>">Umaki</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Sesiones</a><br>
+                        <a href="<?php echo esc_url(home_url('category/willay')); ?>">Willay</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Historias de progreso</a><br>
+                        <a href="<?php echo esc_url(home_url('category/riku')); ?>">Riku</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Kinesiología</a><br>
+                        <a href="<?php echo esc_url(home_url('category/kimn')); ?>">Kimn</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Actividades extracurriculares</a>
+                        <a href="<?php echo esc_url(home_url('category/amulen')); ?>">Amulen</a>
+                    </div>
+                    <div class="enlace">
+                        <a href="<?php echo esc_url(home_url('category/a-koa')); ?>">A Koa</a>
+                    </div>
+                    <div class="enlace">
+                        <a href="<?php echo esc_url(home_url('category/rakiduam')); ?>">Rakiduam</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 footer-links">
                     <h5>Escuela</h5>
                     <div class="enlace">
-                        <a href="">Nosotros</a><br>
+                        <a href="<?php echo esc_url(home_url('escuela/#mision')); ?>">Nosotros</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Nuestro equipo</a><br>
+                        <a href="<?php echo esc_url(home_url('escuela/#equipo')); ?>">Nuestro equipo</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Ruta formativa</a><br>
+                        <a href="<?php echo esc_url(home_url('escuela/#cursos')); ?>">Ruta formativa</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Testimonios</a><br>
+                        <a href="<?php echo esc_url(home_url('escuela/#testimonios')); ?>">Testimonios</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Redes de ayuda</a>
+                        <a href="<?php echo esc_url(home_url('escuela/#redesDeAyuda')); ?>">Redes de ayuda</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 footer-links">
                     <h5>Contacto</h5>
                     <div class="enlace">
-                        <a href="">Información de contacto</a><br>
+                        <a href="<?php echo esc_url(home_url('contacto/')); ?>">Información de contacto</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Mapa de ubicación</a><br>
+                        <a href="<?php echo esc_url(home_url('contacto/#mapa')); ?>">Mapa de ubicación</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Whatsapp</a><br>
+                        <a href="<?php echo esc_url(home_url('contacto/')); ?>">Whatsapp</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Redes Sociales</a><br>
+                        <a href="<?php echo esc_url(home_url('contacto/')); ?>">Redes Sociales</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Programar visita</a>
+                        <a href="<?php echo esc_url(home_url('contacto/')); ?>">Programar visita</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 footer-links">
                     <h5>Admisión</h5>
                     <div class="enlace">
-                        <a href="">Calendario de admisión</a><br>
+                        <a href="<?php echo esc_url(home_url('admision/#calendario')); ?>">Calendario de
+                            admisión</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Valor de matricula</a><br>
+                        <a href="<?php echo esc_url(home_url('admision/')); ?>">Valor de matricula</a><br>
                     </div>
                     <div class="enlace">
-                        <a href="">Postular a la escuela</a>
+                        <a href="<?php echo esc_url(home_url('admision/#matricula')); ?>">Postular a la escuela</a>
                     </div>
                 </div>
             </div>
@@ -83,6 +90,7 @@
                 <div class="creditos">
                     <h6>Escuela Especial San Juan de Dios</h6>
                     <a href="tel:+56322360303">+56 32 236 0303</a>
+                    <span> | </span>
                     <a href="mailto:escuelasanjuan@gmail.com ">escuelasanjuan@gmail.com</a>
                     <h6>©Todos los derechos reservados</h6>
                 </div>

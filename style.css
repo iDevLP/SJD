@@ -206,6 +206,7 @@ span {
     align-items: center;
     margin-left: 15px;
     text-align: center;
+    color: white;
 }
 
 .creditos h5 {
@@ -216,6 +217,11 @@ span {
 .creditos h6 {
     font-weight: 600;
     color: #ffffff;
+}
+
+.creditos a {
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {

@@ -12,7 +12,7 @@
                         calidad que brindan a sus estudiantes una oportunidad única de desarrollar habilidades y
                         conocimientos valiosos para su futuro.</p>
                 </div>
-                <div class="col-md-6 timeline">
+                <div id="calendario" class="col-md-6 timeline">
                     <div class="">
                         <?php if (have_posts()): ?>
                             <?php query_posts("category_name=linea-tiempo"); ?>
@@ -70,7 +70,7 @@
     </div>
 </div>
 
-<div class="container my-5">
+<div id="matricula" class="container my-5">
     <div class="row">
         <div class="col-md-8 mx-auto">
             <h3 class="titulo-gerald3 text-center fw-bold">¡Matriculate ahora!</h3>

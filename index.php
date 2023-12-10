@@ -39,8 +39,8 @@
                 </div>
                 <div class="col-md-4">
                     <article class="caracteristicas-card">
-                        <img class="caracteristicas__img"
-                            src="<?php echo get_theme_file_uri("img/college students-rafiki.png") ?>" alt="">
+                        <img class="caracteristicas__img" src="<?php echo get_theme_file_uri("img/features.png") ?>"
+                            alt="">
                     </article>
                 </div>
                 <div class="col-md-4">
@@ -121,7 +121,7 @@
     </section>
     <!-- --- Testimonios de la comunidad -- -->
     <section class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center gy-5">
             <div class="col-md-6">
                 <div>
                     <span class="text-accent-escuela fw-bold">Somos una familia.</span>

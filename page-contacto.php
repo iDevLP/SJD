@@ -30,13 +30,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="row">
         <div class="col-md-12">
             <h2 class="fw-bold my-5">Contacto</h2>
-            <div class="row">
-                <div class="col-lg-5 col-md-12 mt-3">
+            <div class="row gy-5">
+                <div class="col-lg-5 col-md-12">
                     <article>
-                        <div class="rectangulo d-flex align-items-center mb-5 mx-auto">
+                        <div class=" d-flex align-items-center mb-3 mx-auto">
                             <img src="<?php echo get_theme_file_uri("img/envelope-solid.png") ?>" class="mx-4" alt="">
                             <div class="info-contacto">
-                                <h6 class="my-2 parrafo-gerald3">
+                                <h6 class=" parrafo-gerald3">
                                     Correo electrónico
                                 </h6>
                                 <p class="parrafo-gerald1">
@@ -44,10 +44,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </p>
                             </div>
                         </div>
-                        <div class="rectangulo d-flex align-items-center mb-5 mx-auto">
+                        <div class=" d-flex align-items-center mb-2 mx-auto">
                             <img src="<?php echo get_theme_file_uri("img/phone-solid.png") ?>" class="mx-4" alt="">
                             <div class="info-contacto">
-                                <h6 class="my-2 parrafo-gerald3">
+                                <h6 class=" parrafo-gerald3">
                                     Teléfono
                                 </h6>
                                 <p class="parrafo-gerald1">
@@ -55,11 +55,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </p>
                             </div>
                         </div>
-                        <div class="rectangulo d-flex align-items-center mb-5 mx-auto">
+                        <div class=" d-flex align-items-center mb-2 mx-auto">
                             <img src="<?php echo get_theme_file_uri("img/map-location-dot-solid.png") ?>" class="mx-4"
                                 alt="">
                             <div class="info-contacto">
-                                <h6 class="my-2 parrafo-gerald3">
+                                <h6 class=" parrafo-gerald3">
                                     Dirección
                                 </h6>
                                 <p class="parrafo-gerald1">
@@ -124,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="row">
         <div class="col-md-12">
             <h2 class="titulo-gerald my-2">Ubicación</h2>
-            <iframe style="border: 0;"
+            <iframe id="mapa" style="border: 0;"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1182.6912756715733!2d-71.56575566412921!3d-33.026027202624235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ddfdf422ef3f%3A0x998c617e9c098500!2sEscuela%20Especial%20San%20Juan%20de%20Dios!5e0!3m2!1ses-419!2scl!4v1700165088983!5m2!1ses-419!2scl"
                 width="100%" height="450"></iframe>
         </div>

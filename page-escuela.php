@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="container box-secciones-escuela">
-    <section class="">
-        <div class="row">
+    <section id="mision" class="">
+        <div class="row gy-5">
             <div class="col-md-6">
                 <span class="text-accent-escuela fw-bold">Nuestra misión</span>
                 <h2 class="fw-bold">Educación de calidad</h2>
@@ -21,7 +21,7 @@
         </div>
     </section>
     <?php get_template_part("content", "profesionales"); ?>
-    <section class="">
+    <section id="cursos" class="">
         <div class="row">
             <span class="text-accent-escuela fw-bold">Ruta formativa</span>
             <h3 class="fw-bold ">Conoce nuestros cursos.</h3>
@@ -300,7 +300,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section id="testimonios" class="container">
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <span class="text-accent-escuela fw-bold">Muy recomendados</span>
